@@ -1,0 +1,300 @@
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* --------------------------------------------------------- VARIABLES DE COLORES------------------------------------------------------- */
+
+:root {
+
+    /* GRISES */
+
+    --color-g1: #1C1B1B;
+    --color-g2: #424242;
+    --color-g3: #545454;
+    --color-g4: #676767;
+
+    /* VERDES */
+
+    --color-v1: #4F7014;
+    --color-v2: #9bdc28;
+    --color-v3: #9bdc28;
+    --color-v4: #b5e65e;
+    --color-v5: #c2eb79;
+
+  }
+
+  /* COLORES PARA FONDO */
+
+  .bcolorg1 {
+    background-color: var(--color-g1);
+  }
+  
+  .bcolorg2 {
+    background-color: var(--color-g2);
+  }
+  
+  .bcolorg3 {
+    background-color: var(--color-g3);
+  }
+  
+  .bcolorg4 {
+    background-color: var(--color-g4);
+  }
+
+/* COLORES PARA LETRA */
+
+.lcolorg1 {
+    color: var(--color-g1);
+}
+
+.lcolorg2 {
+    color: var(--color-g2);
+}
+
+.lcolorg3 {
+    color: var(--color-g3);
+}
+
+.lcolorg4 {
+    color: var(--color-g4);
+}
+
+.lcolorv1 {
+    color: var(--color-v1);
+}
+
+.lcolorv2 {
+    color: var(--color-v2);
+}
+
+.lcolorv3 {
+    color: var(--color-v3);
+}
+
+.lcolorv4 {
+    color: var(--color-v4);
+}
+
+.lcolorv5 {
+    color: var(--color-v5);
+}
+
+/* TAMAÑO DE LETRA */
+
+.lenorme {
+    font-size: 2.5rem;
+}
+
+.lgrande {
+    font-size: 1.25rem;
+}
+
+.lnormal {
+    font-size: 1rem;
+}
+
+.lpequeña {
+    font-size: 0.75rem;
+}
+
+.lmini{
+    font-size: 0.5rem;
+}
+
+/* FUENTE */
+
+.nosub {
+    text-decoration: none;
+}
+
+  /* -------------------------------------------------COMPONENTES-------------------------------------------------------------- */
+
+  /* TIPOS */
+
+  html {
+    background-color: var(--color-g2);
+    font-weight: bold;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  nav {
+    background-color: var(--color-g1);
+    width: 100%;
+    height: 3vw;
+  }
+
+  main {
+    height: 45vw;
+    background-color: var(--color-g4);
+  }
+
+  aside {
+    height: 4vw;
+    width: 3vw;
+    background-color: var(--color-g1);
+    opacity: 30%;
+    position: fixed;
+    right: 0;
+    top: 30%;
+    border-top-left-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+    z-index: 4;
+  }
+
+  aside:hover {
+    top: 29%;
+    height: 6vw;
+    width: 5vw;
+    opacity: 100%;
+    transition-duration: 0.3s;
+  }
+
+  h2 {
+    margin: 0;
+    padding-top: 3vw;
+    padding-left: 3vw;
+    padding-bottom: 1.5vw;
+    color: var(--color-v2);
+  }
+
+  h3 {
+    margin: 0;
+    padding-left: 1vw;
+    padding-top: 1vw;
+  }
+
+  a {
+    transition-duration: 0.3s;
+  }
+
+/* BOTONES */
+
+.btn-cart {
+  position: relative;
+  justify-self: center;
+  align-self: center;
+  height: 35px;
+  width: 125px;
+  background-color: var(--color-g2);
+  border-radius: 1vw;
+  border: none;
+}
+
+.btn-close {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  height: 1.5vw;
+  width: 1.5vw;
+  border-radius: 3vw;
+  border: none;
+  background-color: var(--color-g2);
+}
+
+.centrar {
+  position: relative;
+  top: 5%;
+  left: -20%;
+}
+
+  /* CLASES */
+
+  /* Contenedores */
+
+  .containerNav {
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+    background-color: var(--color-g1);
+    width: 100%;
+    height: 3vw;
+    align-items: center;
+    text-align: center;
+    color: var(--color-v2);
+    z-index: 5;
+  }
+
+  .container1 {
+    display: grid;
+    grid-auto-flow: row;
+    height: 35vw;
+    position: relative;
+    background-color: var(--color-g3);
+  }
+
+  .containerH {
+    display: none;
+    height: 40vw;
+    background-color: var(--color-g4);
+  }
+
+  .carritoFlotante {
+    display: none;
+    height: 40vw;
+    width: 20vw;
+    top: 12.5%;
+    right: 0;
+    background-color: var(--color-g1);
+    z-index: 5;
+  }
+
+  .cintaProd {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-g3);
+    justify-self: center;
+  }
+
+  .prodProp {
+    grid-template-rows: 0.3fr 2fr 0.3fr;
+  }
+
+  .img-cont {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .img-cart {
+    height: 125%;
+    width: 125%;
+    position: relative;
+    top: 25%;
+    right: -30%;
+  }
+
+  .grid {
+    display: grid;
+    grid-auto-flow: row;
+  }
+  
+/* -------------------------------------------ZONA DE TRABAJO DEL GRUPO--------------------------------- */
+
+  /* POSICIONES */
+
+  .pabsoluta {
+    position: absolute;
+  }
+
+  .prelativa {
+    position: relative;
+  }
+
+  .pfija {
+    position: fixed;
+  }
+
+  .pestatica {
+    position: static;
+  }
+
+  /* ATRIBUTOS */

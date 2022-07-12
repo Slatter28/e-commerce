@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-comerce</E-comerce></title>
+    <link rel="stylesheet" href="Assets\style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <nav class="" id="navigator">
+        <div class="pfija containerNav lpequeña">
+            <div><a class="nosub" href="#navigator"><i class='bx bxs-invader bx-tada' style='color:#9bdc28' ></i></a></div>
+            <div></div>
+            <div><a class="nosub lcolorv1" href="#products">PRODUCTOS</a></div>
+            <div><a class="nosub lcolorv1" href="#testimonies">TESTIMONIOS</a></div>
+            <div><a class="nosub lcolorv1" href="#contact">CONTACTO</a></div>
+            <div><a class="nosub lcolorv1" href="#formulary">FORMULARIO</a></div>
+            <div><a class="nosub lcolorv1" href="#aboutUs">ACERCA DE LA EMPRESA</a></div>
+        </div>
+    </nav>
+
+    <!-- PRODUCTOS (ROGER Y EDUARDO) -->
+
+    <main class="pestatica grid prodProp" id="products">
+            <h2 class="lgrande">NUESTROS PRODUCTOS:</h2>
+            <div class="cintaProd">cinta de productos</div>
+            <div class="btn-cart">
+                <button class="btn-cart lcolorv4" onclick="mostrarCarrito ()">Ver Carrito</button>
+            </div>
+    </main>
+
+    <!-- CARRITO (ROGER Y EDUARDO) -->
+
+    <aside id="cart">
+        <div onclick="mostrarCarritoFlotante()" class="img-cont">
+            <img class="img-cart" src="Logos\cart60.png">
+        </div>
+    </aside>
+
+    <section class="carritoFlotante pfija" id="cartF">
+        <h3 class="lpequeña lcolorv2">Carrito Flotante</h3>
+        <button onclick="ocultarCarritoFlotante ()" class="btn-close"><i class='bx bxs-x-circle bx-flashing centrar' style='color:#9bdc28' ></i></button>
+    </section>
+
+    <section class="pestatica containerH" id="carritoOculto">
+        <div class="grid prodProp prelativa">
+            <h2>Carrito</h2>
+            <div>Cinta de carrito</div>
+            <div class="btn-cart">
+                <button onclick="ocultarCarrito ()" class="btn-cart lcolorv4">Ocultar Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS (CAMILO Y ENMANUEL) -->
+
+    <section class="container1" id="testimonies">
+        <h2 class="lgrande">TESTIMONIOS</h2>
+    </section>
+
+    <!-- CONTACTO Y UBICACIÓN (RICARDO) -->
+
+    <section  class="container1 lnormal" id="contact">
+        <h2 class="lgrande">CONTÁCTANOS</h2>
+    </section>
+
+    <!-- FORMULARIO (HÉCTOR) -->
+
+    <section  class="container1" id="formulary">
+        <h2 class="lgrande">FORMULARIO</h2>
+    </section>
+
+    <!-- ACERCA DE LA EMPRESA (LUIS) -->
+
+    <section  class="container1" id="aboutUs">
+        <h2 class="lgrande">ACERCA DE NOSOTROS</h2>
+    </section>
+    
+    <script src="Assets\script1.js"></script>
+</body>
+</html>
