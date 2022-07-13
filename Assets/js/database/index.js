@@ -1,75 +1,75 @@
 const productos = [
   {
     id: 1,
-    nombre: 'Hamburguesa',
-    precio: 18.00,
+    nombre: 'CPU',
+    precio: 300.00,
     imagen: './assets/img/hamburger.png',
-    categoria: 'aperitivos',
-    cantidad: 22
+    descripcion: 'Intel Core i7',
+    cantidad: 10
   },
   {
     id: 2,
-    nombre: 'Papas Fritas',
-    precio: 12.00,
+    nombre: 'Placa Base - ASUS ROG Strix',
+    precio: 200.00,
     imagen: './assets/img/french-fries.png',
-    categoria: 'aperitivos',
-    cantidad: 18
+    descripcion: 'X570-E Motherboard Star',
+    cantidad: 6
   },
   {
     id: 3,
-    nombre: 'Hot-Dog',
-    precio: 16.00,
+    nombre: 'Memoria Ram Kingston Beast',
+    precio: 150.00,
     imagen: './assets/img/hot_dog.png',
-    categoria: 'aperitivos',
-    cantidad: 13
+    descripcion: 'DDR5 16gb ram',
+    cantidad: 8
   },
   {
     id: 4,
-    nombre: 'Sandwich',
-    precio: 15.00,
+    nombre: 'Disco Duro Samsung',
+    precio: 100.00,
     imagen: './assets/img/sandwich.png',
-    categoria: 'aperitivos',
-    cantidad: 16
+    descripcion: 'Samsung 1tb SSD',
+    cantidad: 12
   },
   {
     id: 5,
-    nombre: 'Donas',
-    precio: 10.00,
+    nombre: 'Monitor Samsung 24inch Curved',
+    precio: 300.00,
     imagen: './assets/img/donut.png',
-    categoria: 'aperitivos',
-    cantidad: 24
+    descripcion: ' "24" Curved',
+    cantidad: 4
   },
   {
     id: 6,
-    nombre: 'Nuguets',
-    precio: 14.00,
+    nombre: 'Fuente de Poder 750w',
+    precio: 80.00,
     imagen: './assets/img/chicken_leg.png',
-    categoria: 'aperitivos',
-    cantidad: 20
+    descripcion: 'Evga 750w',
+    cantidad: 15
   },
   {
     id: 7,
-    nombre: 'Soda en Vaso',
-    precio: 15.00,
+    nombre: 'Tarjeta de Video GTX 1080',
+    precio: 200.00,
     imagen: './assets/img/soda_cup.png',
-    categoria: 'bebidas',
-    cantidad: 18
+    descripcion: 'Nvidea Geforce GTX 1080 - 8gb',
+    cantidad: 5
   },
   {
     id: 8,
-    nombre: 'Soda en Lata',
-    precio: 13.00,
+    nombre: 'Liquid Cooling',
+    precio: 85.00,
     imagen: './assets/img/soda.png',
-    categoria: 'bebidas',
-    cantidad: 14
+    descripcion: 'Evga Intel Amd 240mm Rgb',
+    cantidad: 4
   },
   {
     id: 9,
-    nombre: 'Jugo',
-    precio: 11.00,
+    nombre: 'Full tower (E-ATX)',
+    precio: 60.00,
     imagen: './assets/img/glass.png',
-    categoria: 'bebidas',
-    cantidad: 15
+    descripcion: 'Full Tower E-ATX',
+    cantidad: 8
   }
 ]
 

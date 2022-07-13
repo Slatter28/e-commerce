@@ -8,12 +8,13 @@ function pintarProductos () {
   /* Creamos una variable para almacenar después los productos */
   let html = ''
   /* Recorremos el array de productos */
-  for (const { id, nombre, imagen, precio, cantidad } of productos) {
+  for (const { id, nombre, imagen, precio, cantidad, descripcion } of productos) {
     html += `
     <div>
       <img src="${imagen}" alt="${nombre}">
       <div>
         <h2>${nombre} - $ ${precio}</h2>
+        <p>Descripcion: ${descripcion}</p>
         <p>Cantidad: ${cantidad}</p>
         <div>
           <button type="button" class="agregar" data-id="${id}">Agregar</button>
