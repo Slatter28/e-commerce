@@ -13,7 +13,7 @@
     <nav class="" id="navigator">
         <div class="pfija containerNav lpequeña">
             <div><a class="nosub" href="#navigator"><i class='bx bxs-invader bx-tada' style='color:#9bdc28' ></i></a></div>
-            <div></div>
+            <!-- <div></div> -->
             <div><a class="nosub lcolorv1" href="#products">PRODUCTOS</a></div>
             <div><a class="nosub lcolorv1" href="#testimonies">TESTIMONIOS</a></div>
             <div><a class="nosub lcolorv1" href="#contact">CONTACTO</a></div>
@@ -40,9 +40,15 @@
         </div>
     </aside>
 
-    <section class="carritoFlotante pfija" id="cartF">
-        <h3 class="lpequeña lcolorv2">Carrito Flotante</h3>
-        <button onclick="ocultarCarritoFlotante ()" class="btn-close"><i class='bx bxs-x-circle bx-flashing centrar' style='color:#9bdc28' ></i></button>
+    <section class="carritoFlotante pfija grid cartProp" id="cartF">
+        <div class="bcolorg1 grid cart-label">
+            <h3 class="lpequeña lcolorv2">Carrito Flotante</h3>
+            <button onclick="ocultarCarritoFlotante ()" class="btn-close"><i class='bx bx-x bx-burst centrar' style='color:#9bdc28' ></i></button>
+        </div>
+        <div class="cintaCart">
+
+        </div>
+        <div class="grid"><button class="btn-cart2 lcolorv2">Realizar pago</button></div>
     </section>
 
     <section class="pestatica containerH" id="carritoOculto">

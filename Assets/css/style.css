@@ -128,7 +128,7 @@ html {
   }
 
   nav {
-    background-color: var(--color-g1);
+    background-color: var(--color-g4);
     width: 100%;
     height: 3vw;
   }
@@ -142,21 +142,31 @@ html {
     height: 4vw;
     width: 3vw;
     background-color: var(--color-g1);
-    opacity: 30%;
+    opacity: 40%;
     position: fixed;
     right: 0;
     top: 30%;
     border-top-left-radius: 3vw;
     border-bottom-left-radius: 3vw;
+    border: none;
     z-index: 4;
+    transition: all 0.3s ease-in-out;
   }
 
   aside:hover {
     top: 29%;
+    right: 1vw;
     height: 6vw;
-    width: 5vw;
+    width: 6vw;
     opacity: 100%;
-    transition-duration: 0.3s;
+    border-radius: 3vw;
+    border: 3px inset ;
+    
+  }
+
+  aside div:hover {
+    right: 7.5%;
+    transition: all 0.3s ease-in-out;
   }
 
   h2 {
@@ -164,19 +174,10 @@ html {
     padding-top: 3vw;
     padding-left: 3vw;
     padding-bottom: 1.5vw;
-    color: var(--color-v2);
+    color: var(--color-v4);
   }
 
-  h3 {
-    margin: 0;
-    padding-left: 1vw;
-    padding-top: 1vw;
-  }
-
-  a {
-    transition-duration: 0.3s;
-  }
-
+  
 /* BOTONES */
 
 .btn-cart {
@@ -190,37 +191,110 @@ html {
   border: none;
 }
 
+.btn-cart2 {
+  position: relative;
+  justify-self: center;
+  align-self: center;
+  height: 25px;
+  width: 120px;
+  background-color: var(--color-g2);
+  border-radius: 1vw;
+  border: none;
+  opacity: 30%;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-cart2:hover {
+  opacity: 100%;
+  border: 2px var(--color-g2) outset;
+}
+
 .btn-close {
+  display: flex;
   position: absolute;
-  right: 2%;
-  top: 2%;
-  height: 1.5vw;
-  width: 1.5vw;
+  right: 3%;
+  top: 1.5%;
+  height: 20px;
+  width: 20px;
   border-radius: 3vw;
   border: none;
   background-color: var(--color-g2);
+  opacity: 35%;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-close:hover {
+  opacity: 100%;
+  border: 1px outset var(--color-g2);
 }
 
 .centrar {
   position: relative;
-  top: 5%;
-  left: -20%;
+  justify-self:center;
+  align-self:center;
+  right: 2px;
 }
 
-  /* CLASES */
+.btn-close .centrar:hover {
+  right: 2.5px;
+}
+
+/* POSICIONES */
+
+.pabsoluta {
+  position: absolute;
+}
+
+.prelativa {
+  position: relative;
+}
+
+.pfija {
+  position: fixed;
+}
+
+.pestatica {
+  position: static;
+}
 
   /* Contenedores */
 
   .containerNav {
     display: grid;
-    grid-template-columns: repeat(7 , 1fr);
-    background-color: var(--color-g1);
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 2px;
+    /* background-color: var(--color-g1); */
+    opacity: 95%;
     width: 100%;
     height: 3vw;
     align-items: center;
     text-align: center;
     color: var(--color-v2);
     z-index: 5;
+  }
+
+  .containerNav div {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    line-height: 275%;
+    transition: all 0.15s ease-in-out;
+    background-color: var(--color-g1);
+  }
+
+  .containerNav div a {
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* .containerNav div:hover {
+    background-color: var(--color-g2);
+  } */
+
+  .containerNav div a:hover {
+    color: var(--color-v2);
+    background-color: var(--color-g2);
+    border-radius: 3px;
+    padding: 3px;
   }
 
   .container1 {
@@ -238,20 +312,44 @@ html {
   }
 
   .carritoFlotante {
-    display: none;
-    height: 40vw;
-    width: 20vw;
+    /* display: none; */
+    height: 530px;
+    width: 25vw;
     top: 12.5%;
-    right: 0;
+    right: -100%;
     background-color: var(--color-g1);
     z-index: 5;
+    border-bottom-left-radius: 3vw;
+    border-top-right-radius: 25px;
+  }
+
+  .cartProp {
+    grid-template-rows: 0.15fr 2fr 0.2fr;
+  }
+
+  .carritoFlotante div:first-child {
+    border-top-right-radius: 20px;
+  }
+
+  .carritoFlotante div:last-child {
+    align-content: center;
+    justify-content: center;
+  }
+
+  .cintaCart {
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px groove var(--color-v4);
+    border-radius: 10px;
   }
 
   .cintaProd {
     height: 100%;
-    width: 100%;
+    width: 98%;
+    border-radius: 15px;
     background-color: var(--color-g3);
     justify-self: center;
+    border: 3px var(--color-g3) inset;
   }
 
   .prodProp {
@@ -276,25 +374,62 @@ html {
     display: grid;
     grid-auto-flow: row;
   }
-  
-/* -------------------------------------------ZONA DE TRABAJO DEL GRUPO--------------------------------- */
 
-  /* POSICIONES */
+  /* OTRAS CLASES */
 
-  .pabsoluta {
-    position: absolute;
-  }
-
-  .prelativa {
-    position: relative;
-  }
-
-  .pfija {
-    position: fixed;
-  }
-
-  .pestatica {
-    position: static;
+  .cart-label {
+    grid-template-columns: 1fr 0.5fr;
+    align-items: center;
+    justify-items: left;
+    padding-left: 6%;
   }
 
   /* ATRIBUTOS */
+
+  .sinop {
+    opacity: 100%;
+  }
+
+  /* ANIMACIONES */
+
+  .animCart {
+    animation-name: anim1;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    right: 0;
+  }
+
+  .animCart2 {
+    animation-name: anim2;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes anim1 {
+
+    from {
+      right: -100%;
+    }
+
+    to {
+      right: 0;
+    }
+
+  }
+
+  @keyframes anim2 {
+    
+    from {
+      right: 0%;
+    }
+
+    99% {
+      right: -100%;
+    }
+
+    to {
+      display: none;
+    }
+  }
+  
+/* -------------------------------------------ZONA DE TRABAJO DEL GRUPO--------------------------------- */

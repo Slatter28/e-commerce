@@ -1,6 +1,6 @@
 const carrito = document.getElementById("carritoOculto");
 
-const carritoF = document.querySelector(".carritoFlotante")
+const carritoF = document.querySelector(".carritoFlotante");
 
 function mostrarCarrito () {
    carrito.style.display = 'grid'
@@ -11,9 +11,11 @@ function ocultarCarrito () {
 }
 
 function mostrarCarritoFlotante () {
-    carritoF.style.display = "grid"
+    // carritoF.style.display = "grid"
+    carritoF.className = "carritoFlotante pfija grid cartProp animCart"
 }
 
 function ocultarCarritoFlotante () {
-    carritoF.style.display = "none"
+    carritoF.className = "carritoFlotante pfija grid cartProp animCart2";
+    // carritoF.style.display = "none";
 }
