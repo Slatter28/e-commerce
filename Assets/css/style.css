@@ -277,7 +277,7 @@ html {
     height: 100%;
     width: 100%;
     border-radius: 5px;
-    line-height: 275%;
+    line-height: 325%;
     transition: all 0.15s ease-in-out;
     background-color: var(--color-g1);
   }
