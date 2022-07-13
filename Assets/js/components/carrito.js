@@ -20,7 +20,7 @@ function pintarArticulos () {
 
     html += `
     <div>
-    <img src="${imagen}" alt="${nombre}">
+    <img class="imgBx" src="${imagen}" alt="${nombre}">
     <div>
       <h2>${nombre} - $ ${articulo.cantidad * precio} x${articulo.cantidad}</h2>
       <button class="remover" type="button" data-id="${id}">-</button>
