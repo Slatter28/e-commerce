@@ -305,12 +305,6 @@ html {
     background-color: var(--color-g3);
   }
 
-  .containerH {
-    display: none;
-    height: 40vw;
-    background-color: var(--color-g4);
-  }
-
   .carritoFlotante {
     /* display: none; */
     height: 530px;
