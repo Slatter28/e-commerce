@@ -298,3 +298,39 @@ html {
   }
 
   /* ATRIBUTOS */
+
+
+
+
+
+  /* TESTIMONIOS */
+  .testimony__container{
+    display: flex;
+  }
+  .testimony{
+    height: 300px;
+    width: 300px;
+    border-radius: 40%;
+    margin: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    background: #424242;
+  }
+  .testimony span{
+    color: aliceblue;
+  }
+  .stars{
+    margin: 15px;
+  }
+  .stars i{
+    color: gold;
+  }
+  .testimony img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
