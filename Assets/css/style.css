@@ -188,7 +188,7 @@ main {
   justify-self: center;
   align-self: center;
   height: 35px;
-  width: 125px;
+  width: 120px;
   background-color: var(--color-g2);
   border-radius: 1vw;
   border: none;
@@ -199,7 +199,7 @@ main {
   justify-self: center;
   align-self: center;
   height: 25px;
-  width: 120px;
+  width: 50%;
   background-color: var(--color-g2);
   border-radius: 1vw;
   border: none;
@@ -432,8 +432,10 @@ main {
 #btnsAcciones {
   display: flex;
   gap: 20px;
-  width: 100%;
+  width: 80%;
   justify-content: space-between;
+  justify-items: center;
+  justify-self: center;
 }
 
 #btnsAcciones button {
