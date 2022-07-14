@@ -9,7 +9,7 @@ const articulosContenedor = document.getElementById('articulosContenedor')
 const precioTotal = document.getElementById('precioTotal')
 
 /* Pintamos los articulos en el Carrito */
-function pintarArticulos () {
+function pintarArticulos() {
   /* creamos una variable para almacenar después los articulos */
   let html = ''
   /* Recorremos el array de articulos */
@@ -18,32 +18,55 @@ function pintarArticulos () {
 
     const { id, nombre, imagen, precio, cantidad } = productoFiltrado
 
-    html += `
-    <div>
-    <img src="${imagen}" alt="${nombre}">
-    <div>
-      <h2>${nombre} - $ ${articulo.cantidad * precio} x${articulo.cantidad}</h2>
-      <button class="remover" type="button" data-id="${id}">-</button>
-      <span>${articulo.cantidad}</span>
-      <button class="agregar" type="button" data-id="${id}">+</button>
-      <div>
-        <button class="removerTodo" type="eliminar" data-id="${id}">eliminar</button>
+    // html += `
+    // <div class="articulosContenedor__item">
+    // <div class="articulo_imagen">
+    // <img class="imgBx" src="${imagen}" alt="${nombre}"/>
+    // <div>
+    // <h2>${nombre} - $ ${articulo.cantidad * precio} x${articulo.cantidad}</h2>
+    // <button class="remover" type="button" data-id="${id}">-</button>
+    // <span>${articulo.cantidad}</span>
+    // <button class="agregar" type="button" data-id="${id}">+</button>
+    // <div>
+    //     <button class="removerTodo" type="eliminar" data-id="${id}">eliminar</button>
+    // </div>
+    // </div>
+    // </div>
+    // </div>
+    // `
+
+    html +=`
+      <div class="tarjeta">
+        <div class="tarjeta__imagen">
+        <img src="${imagen}" alt="${nombre}"/>
+        </div>
+        <div class="tarjeta__body">
+          <h5 class="tarjeta__title">${nombre}</h5>
+          <div class="tarjeta__options">
+            <div class="options__head">
+              <button class="remover flechas" type="button" data-id="${id}"><i class='bx bxs-down-arrow'></i></button>
+              <span>${articulo.cantidad}</span>
+              <button class="agregar flechas" type="button" data-id="${id}"><i class='bx bxs-up-arrow'></i></button>
+              
+            </div>
+            <div class="options__footer">
+              <button class="removerTodo button-24" type="eliminar" data-id="${id}">eliminar <i class='bx bxs-trash' ></i></button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>  
-    `
+  `
   }
 
   console.log(articulos)
   articulosContenedor.innerHTML = html
 
   /* Pintar el total en el Carrito */
-  precioTotal.innerHTML = mostrarTotal()
+  precioTotal.innerHTML = "Total : "+ mostrarTotal()
 }
 
-function agregarArticulo (id, cantidad) {
+function agregarArticulo(id, cantidad) {
   const productoFiltrado = productos.find(producto => producto.id === id)
-
   /* cehcar que tengamos stock del producto */
   if (productoFiltrado && productoFiltrado.cantidad > 0) {
     /* Si el articulo no está, lo agregamos, pero si ya está, aumentamos la cantidad */
@@ -65,7 +88,7 @@ function agregarArticulo (id, cantidad) {
   }
 }
 
-function removerArticulo (id, cantidad) {
+function removerArticulo(id, cantidad) {
   const articuloFiltrado = articulos.find(articulo => articulo.id === id)
 
   if (articuloFiltrado.cantidad - cantidad > 0) {
@@ -79,17 +102,17 @@ function removerArticulo (id, cantidad) {
   }
 }
 
-function removerTodo (id) {
+function removerTodo(id) {
   articulos = articulos.filter(articulo => articulo.id !== id)
 }
 
-function checarInventario (id, cantidad) {
+function checarInventario(id, cantidad) {
   const productoFiltrado = productos.find(producto => producto.id === id)
 
   return productoFiltrado.cantidad - cantidad >= 0
 }
 
-function mostrarTotal () {
+function mostrarTotal() {
   let total = 0
   for (const articulo of articulos) {
     const productoFiltrado = productos.find(producto => producto.id === articulo.id)
@@ -98,11 +121,11 @@ function mostrarTotal () {
   return `$${total}`
 }
 
-function vaciarCarrito () {
+function vaciarCarrito() {
   articulos = []
 }
 
-function comprar () {
+function comprar() {
   for (const articulo of articulos) {
     const productoFiltrado = productos.find(producto => producto.id === articulo.id)
 
