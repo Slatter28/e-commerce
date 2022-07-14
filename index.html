@@ -17,28 +17,53 @@
         <div class="pfija containerNav lpequeña">
             <div><a class="nosub" href="#navigator"><i class='bx bxs-invader bx-tada' style='color:#9bdc28' ></i></a></div>
             <!-- <div></div> -->
+            <div><a class="nosub lcolorv1" href="#aboutUs">ACERCA DE LA EMPRESA</a></div>
             <div><a class="nosub lcolorv1" href="#products">PRODUCTOS</a></div>
             <div><a class="nosub lcolorv1" href="#testimonies">TESTIMONIOS</a></div>
             <div><a class="nosub lcolorv1" href="#contact">CONTACTO</a></div>
             <div><a class="nosub lcolorv1" href="#formulary">FORMULARIO</a></div>
-            <div><a class="nosub lcolorv1" href="#aboutUs">ACERCA DE LA EMPRESA</a></div>
+            
         </div>
     </nav>
 
     <!-- PRODUCTOS (ROGER Y EDUARDO) -->
 
-    <main class="pestatica grid prodProp">
+<main class="grid">
+
+        <!-- ACERCA DE LA EMPRESA (LUIS) -->
+
+        <section  class="container1-qs" id="aboutUs">
+            <h2 class="lgrande-qs">QUIENES SOMOS</h2>
+            <div class="contenedor-pic">
+                <img src="Assets/img/LOGO.PNG" alt="logo G5">
+            </div>
+            <div class="contenedor-parrafo">
+                <h3>Bienvenido al mundo de la Tecnologia</h3>
+                <p>En GRUPO G5 creamos el lugar más conveniente para comprar electrónica en Latinoamerica. Nuestro sitio www.nombreDeLaEmpresa.com ya es el más funcional y surtido en electrónica de consumo / computación al nivel Latinoamerica. Junto con nuestros clientes, continuamos innovándonos para seguir ofreciéndote el mejor lugar para realizar tus compras. <br><br><br>
+    
+    Constituida a principios del 2022, GRUPO G5 participó en el programa de la Incubadora de Empresas del Tecnológico de Monterrey (ITESM) y fue certificada por la Asociación de Internet. GRUPO G5 es socio preferido de las mejores marcas y distribuye más de 30,000 productos nuevos, 100% originales y con la garantía del fabricante. Contamos con certificaciones como canal de distribución de diferentes fabricantes. <br><br><br>
+    
+    Dentro de nuestra gama de productos encontrarás electrónica de consumo como son productos Apple, Televisores, Audio & MP3, Foto & Video, componentes, así como productos de computación como son Portátiles, PC’s, Cómputo, Monitores,  Punto de Venta (POS), Impresoras & Copiadoras, Telecomunicación y Software. <br><br><br>
+    
+    Miles de usuarios visitan nuestra página cada día y disfrutan de nuestro excelente nivel de servicio al cliente. Te invitamos a leer las experiencias de nuestros clientes al comprar con GRUPO G5 en el módulo independiente de eKomi. <br><br>
+                </p>
+            </div>
+            <div class="contenedor-pic2">
+                <img src="Assets/img/ekomi.png" alt="certificado Ekomi">
+            </div>
+    
+        </section>
             
-        <section   class="contenedor__principal" id="products">
+        <section   class="contenedor__principal grid" id="products">
 
 
-        <div class="contenedor__productos grid prodProp">
-            <h2 class="lgrande">NUESTROS PRODUCTOS:</h2>
-            <div class="cintaProd">cinta de productos</div>
-            <div>
+            <div class="contenedor__productos grid prodProp">
+                <h2 class="lgrande">NUESTROS PRODUCTOS:</h2>
+                <div class="cintaProd">cinta de productos</div>
+                <div>
             <section id="productosContenedor" class="productos"></section>
 
-        </div>
+            </div>
 
 
 
@@ -46,6 +71,12 @@
         </section>
 
         <!-- CARRITO FLOTANTE  (ROGER, AÑADE TUS CAMBIOS EN ESTE DISEÑO) -->
+
+    <aside id="cart">
+        <div onclick="mostrarCarritoFlotante()" class="img-cont">
+            <img class="img-cart" src="Assets/img/cart60.png">
+        </div>
+    </aside>
 
         <section class="carritoFlotante pfija grid cartProp" id="cartF">
             <div class="bcolorg1 grid cart-label">
@@ -110,69 +141,6 @@
 
         <!-- TESTIMONIOS (CAMILO Y ENMANUEL) -->
 
-        <section class="container1" id="testimonies">
-            <h2 class="lgrande">TESTIMONIOS</h2>
-        </section>
-
-        <!-- CONTACTO Y UBICACIÓN (RICARDO) -->
-
-        <section class="container1 lnormal" id="contact">
-            <h2 class="lgrande">CONTÁCTANOS</h2>
-        </section>
-
-        <!-- FORMULARIO (HÉCTOR) -->
-
-        <section class="container1" id="formulary">
-            <h2 class="lgrande">FORMULARIO</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1112003.609782289!2d-110.70350918141115!3d23.723987613609314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zMjPCsDI5JzUyLjEiTiAxMDnCsDUyJzUyLjIiVw!5e0!3m2!1ses-419!2spe!4v1657767184431!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-
-        <!-- ACERCA DE LA EMPRESA (LUIS) -->
-
-        <section  class="container1-qs" id="aboutUs">
-            <h2 class="lgrande-qs">QUIENES SOMOS</h2>
-            <div class="contenedor-pic">
-                <img src="Assets/img/LOGO.PNG" alt="logo G5">
-            </div>
-            <div class="contenedor-parrafo">
-                <h3>Bienvenido al mundo de la Tecnologia</h3>
-                <p>En GRUPO G5 creamos el lugar más conveniente para comprar electrónica en Latinoamerica. Nuestro sitio www.nombreDeLaEmpresa.com ya es el más funcional y surtido en electrónica de consumo / computación al nivel Latinoamerica. Junto con nuestros clientes, continuamos innovándonos para seguir ofreciéndote el mejor lugar para realizar tus compras. <br><br><br>
-    
-    Constituida a principios del 2022, GRUPO G5 participó en el programa de la Incubadora de Empresas del Tecnológico de Monterrey (ITESM) y fue certificada por la Asociación de Internet. GRUPO G5 es socio preferido de las mejores marcas y distribuye más de 30,000 productos nuevos, 100% originales y con la garantía del fabricante. Contamos con certificaciones como canal de distribución de diferentes fabricantes. <br><br><br>
-    
-    Dentro de nuestra gama de productos encontrarás electrónica de consumo como son productos Apple, Televisores, Audio & MP3, Foto & Video, componentes, así como productos de computación como son Portátiles, PC’s, Cómputo, Monitores,  Punto de Venta (POS), Impresoras & Copiadoras, Telecomunicación y Software. <br><br><br>
-    
-    Miles de usuarios visitan nuestra página cada día y disfrutan de nuestro excelente nivel de servicio al cliente. Te invitamos a leer las experiencias de nuestros clientes al comprar con GRUPO G5 en el módulo independiente de eKomi. <br><br>
-                </p>
-            </div>
-            <div class="contenedor-pic2">
-                <img src="Assets/img/ekomi.png" alt="certificado Ekomi">
-            </div>
-    
-        </section>
-    </main>
-
-    <!-- CARRITO (ROGER Y EDUARDO) -->
-
-    <aside id="cart">
-        <div onclick="mostrarCarritoFlotante()" class="img-cont">
-            <img class="img-cart" src="Assets/img/cart60.png">
-        </div>
-    </aside>
-
-    <section class="carritoFlotante pfija grid cartProp" id="cartF">
-        <div class="bcolorg1 grid cart-label">
-            <h3 class="lpequeña lcolorv2">Carrito Flotante</h3>
-            <button onclick="ocultarCarritoFlotante ()" class="btn-close"><i class='bx bx-x bx-burst centrar' style='color:#9bdc28' ></i></button>
-        </div>
-        <div class="cintaCart">
-
-        </div>
-        <div class="grid"><button class="btn-cart2 lcolorv2">Realizar pago</button></div>
-    </section>
-
-    <!-- TESTIMONIOS (CAMILO Y ENMANUEL) -->
-
     <section class="container1" id="testimonies">
         <h2 class="lgrande">TESTIMONIOS</h2>
             <div class="testimony__container">
@@ -226,23 +194,22 @@
                 </div>
     </section>
 
-    <!-- CONTACTO Y UBICACIÓN (RICARDO) -->
 
-    <section  class="container1 lnormal" id="contact">
-        <h2 class="lgrande">CONTÁCTANOS</h2>
-    </section>
+        <!-- CONTACTO Y UBICACIÓN (RICARDO) -->
 
-    <!-- FORMULARIO (HÉCTOR) -->
+        <section class="container1 lnormal" id="contact">
+            <h2 class="lgrande">CONTÁCTANOS</h2>
+        </section>
 
-    <section  class="container1" id="formulary">
-        <h2 class="lgrande">FORMULARIO</h2>
-    </section>
+        <!-- FORMULARIO (HÉCTOR) -->
 
-    <!-- ACERCA DE LA EMPRESA (LUIS) -->
+        <section class="container1" id="formulary">
+            <h2 class="lgrande">FORMULARIO</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1112003.609782289!2d-110.70350918141115!3d23.723987613609314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zMjPCsDI5JzUyLjEiTiAxMDnCsDUyJzUyLjIiVw!5e0!3m2!1ses-419!2spe!4v1657767184431!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
 
-    <section  class="container1" id="aboutUs">
-        <h2 class="lgrande">ACERCA DE NOSOTROS</h2>
-    </section>
+        
+</main>
     
     <script src="Assets/js/script1.js"></script>
     <script src="Assets/js/main.js" type="module"></script>
