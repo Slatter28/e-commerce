@@ -443,10 +443,6 @@ main {
 
 /* FIN DEL AÑADIDO */
 
-.prodProp {
-  grid-template-rows: 0.3fr 2fr 0.3fr;
-}
-
 .img-cont {
   height: 100%;
   width: 100%;
