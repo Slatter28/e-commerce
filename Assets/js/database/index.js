@@ -1,11 +1,11 @@
 const productos = [
   {
     id: 1,
-    nombre: 'Procesador I7',
+    nombre: 'CPU',
     precio: 300.00,
     imagen: './assets/img/coreIntel7.png',
     descripcion: 'Intel Core i7',
-    cantidad: 22
+    cantidad: 10
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const productos = [
     precio: 200.00,
     imagen: './assets/img/motherboard.png',
     descripcion: 'X570-E Motherboard Star',
-    cantidad: 18
+    cantidad: 6
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const productos = [
     precio: 150.00,
     imagen: './assets/img/ddr5Ram.png',
     descripcion: 'DDR5 16gb ram',
-    cantidad: 13
+    cantidad: 8
   },
   {
     id: 4,
@@ -29,23 +29,23 @@ const productos = [
     precio: 100.00,
     imagen: './assets/img/Samsung1tbSSD.png',
     descripcion: 'Samsung 1tb SSD',
-    cantidad: 16
+    cantidad: 12
   },
   {
     id: 5,
     nombre: 'Monitor Samsung 24inch Curved',
     precio: 300.00,
-    imagen: './assets/img/donut.png',
+    imagen: './assets/img/monitorSamsung.png',
     descripcion: ' "24" Curved',
-    cantidad: 24
+    cantidad: 4
   },
   {
     id: 6,
     nombre: 'Fuente de Poder 750w',
     precio: 80.00,
-    imagen: './assets/img/chicken_leg.png',
+    imagen: './assets/img/evga750W.png',
     descripcion: 'Evga 750w',
-    cantidad: 20
+    cantidad: 15
   },
   {
     id: 7,
@@ -53,23 +53,23 @@ const productos = [
     precio: 200.00,
     imagen: './assets/img/nvidiaGeforce.png',
     descripcion: 'Nvidea Geforce GTX 1080 - 8gb',
-    cantidad: 18
+    cantidad: 5
   },
   {
     id: 8,
     nombre: 'Liquid Cooling',
     precio: 85.00,
-    imagen: './assets/img/soda.png',
+    imagen: './assets/img/evgaIntel-AMD240mm.png',
     descripcion: 'Evga Intel Amd 240mm Rgb',
-    cantidad: 14
+    cantidad: 4
   },
   {
     id: 9,
     nombre: 'Full tower (E-ATX)',
     precio: 60.00,
-    imagen: './assets/img/glass.png',
+    imagen: './assets/img/fullTower-EATX.png',
     descripcion: 'Full Tower E-ATX',
-    cantidad: 15
+    cantidad: 8
   }
 ]
 export default productos

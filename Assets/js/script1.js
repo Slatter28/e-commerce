@@ -11,7 +11,7 @@ function ocultarCarrito () {
 }
 
 function mostrarCarritoFlotante () {
-    carritoF.style.display = "grid"
+    carritoF.style.display = "flex"
 }
 
 function ocultarCarritoFlotante () {

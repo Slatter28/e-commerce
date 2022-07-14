@@ -10,7 +10,7 @@ function pintarProductos () {
   /* Recorremos el array de productos */
   for (const { id, nombre, imagen, precio, cantidad,descripcion } of productos) {
     // html += `
-    // <div>
+    // <div class="productos">
     //   <img src="${imagen}" alt="${nombre}">
     //   <div>
     //     <h2>${nombre} - $ ${precio}</h2>
@@ -28,11 +28,13 @@ function pintarProductos () {
         <img src="${imagen}">
       </div>
       <div class="contentBx">
-        <h2>${nombre} - $ ${precio} </h2>
+        <h2>${nombre} <br> $ ${precio} </h2>
         <div class="size">
-          <h3>${descripcion}</h3>
+          <h3>Descripción</h3>
+          <p>${descripcion}</p>
+          <h3>Cantidad : ${cantidad}</h3>
         </div>
-        <a href="#">Buy Now</a>
+        <button class="agregar button-49" role="button" type="button" data-id="${id}">Agregar <i class='bx bx-cart-add'></i></button>
       </div>
     </div>
   </div>
