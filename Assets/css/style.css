@@ -136,7 +136,7 @@ nav {
 }
 
 main {
-  height: 45vw;
+  min-height: 45vh;
   background-color: var(--color-g4);
 }
 
@@ -228,7 +228,7 @@ a {
 .container1 {
   display: grid;
   grid-auto-flow: row;
-  height: 35vw;
+  min-height: 35vw;
   position: relative;
   background-color: var(--color-g3);
 }
@@ -667,51 +667,8 @@ img {
     clip-path: var(--slice-3);
     transform: translate(0px, 5px);
   }
-
-<<<<<<< HEAD
-  /* ATRIBUTOS */
-=======
-  40% {
-    clip-path: var(--slice-2);
-    transform: translate(-5px, 0px);
-  }
-
-  50% {
-    clip-path: var(--slice-3);
-    transform: translate(5px, 0px);
-  }
-
-  60% {
-    clip-path: var(--slice-4);
-    transform: translate(5px, 10px);
-  }
-
-  70% {
-    clip-path: var(--slice-2);
-    transform: translate(-10px, 10px);
-  }
-
-  80% {
-    clip-path: var(--slice-5);
-    transform: translate(20px, -10px);
-  }
-
-  90% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 0px);
-  }
-
-  100% {
-    clip-path: var(--slice-1);
-    transform: translate(0);
-  }
 }
->>>>>>> 1fffc5b74be4cb638d658ef10029624898f577cc
-
-
-
-
-<<<<<<< HEAD
+  /* ATRIBUTOS */
 
   /* TESTIMONIOS */
   .testimony__container{
@@ -744,91 +701,3 @@ img {
     width: 80px;
     border-radius: 50%;
   }
-=======
-/* CSS */
-.button-33 {
-  background-color: #c2fbd7;
-  border-radius: 100px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
-  color: green;
-  cursor: pointer;
-  display: inline-block;
-  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
-  padding: 7px 20px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 250ms;
-  border: 0;
-  font-size: 12px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-33:hover {
-  box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
-  transform: scale(1.05) rotate(-1deg);
-}
-
-.flechas{
-  background-color: transparent;
-  border: none;
-  color: #9adc28d3;
-  cursor: pointer;
-}
-
-/* CSS */
-.button-24 {
-  background: #9adc28d3;
-  border: 1px solid #9bdc28;
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-  box-sizing: border-box;
-  color: #1C1B1B;
-  cursor: pointer;
-  display: inline-block;
-  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
-  font-size: 12px;
-  min-height: 25px;
-  text-align: center;
-
-}
-
-.button-24:hover,
-.button-24:active {
-  background-color: initial;
-  background-position: 0 0;
-  color: #9bdc28;
-}
-
-.button-24:active {
-  opacity: .5;
-}
-
-@media (min-width: 576px) {
-  .productos {
-    /* grid-template-columns:  repeat(2,1fr); */
-    /* gap: 3rem;
-    margin-left: 3rem;
-    margin-right: 3rem; */
-  }
-}
-
-@media (min-width: 768px) {
-  .productos {
-    /* grid-template-columns:  repeat(3,1fr); */
-    /* gap: 3rem;
-    margin-left: 3rem;
-    margin-right: 3rem; */
-  }
-}
-
-@media (min-width: 992px) {
-  .productos {
-    /* grid-template-columns:  repeat(4,1fr); */
-    /* gap: 1rem; */
-    /* margin-left: 3rem; */
-    /* margin-right: 3rem; */
-  }
-}
->>>>>>> 1fffc5b74be4cb638d658ef10029624898f577cc
