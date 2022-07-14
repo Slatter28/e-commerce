@@ -616,7 +616,8 @@ main {
   height: 100px;
   text-align: center;
   transition: 1s;
-  z-index: 10;
+  /* z-index: 10; */ /* desactivado para que no se vea encima el titulo de la card 
+  encima del carrito flotante */
 }
 
 .container_card .card:hover .contentBx {
