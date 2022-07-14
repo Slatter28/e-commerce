@@ -269,7 +269,7 @@ main {
     /* background-color: var(--color-g1); */
     opacity: 95%;
     width: 100%;
-    height: 3vw;
+    height: 3vh;
     align-items: center;
     text-align: center;
     color: var(--color-v2);
@@ -311,7 +311,6 @@ main {
   }
 
   .contenedor__productos {
-    height: 45vw;
     background-color: var(--color-g4);
   }
 
@@ -348,7 +347,7 @@ main {
   }
 
   .cintaProd {
-    height: 100%;
+    height: 2em;
     width: 98%;
     border-radius: 15px;
     background-color: var(--color-g3);
@@ -443,10 +442,6 @@ main {
 }
 
 /* FIN DEL AÑADIDO */
-
-.prodProp {
-  grid-template-rows: 0.3fr 2fr 0.3fr;
-}
 
 .img-cont {
   height: 100%;
@@ -939,4 +934,15 @@ img {
     height: 80px;
     width: 80px;
     border-radius: 50%;
+  }
+
+
+  /* <==================== Formulario =======================> */
+
+
+  .contact__container {
+    width: 1040px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
