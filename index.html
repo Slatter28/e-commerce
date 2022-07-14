@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>E-comerce</E-comerce></title>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+=======
+    <title>E-comerce</E-comerce>
+    </title>
+>>>>>>> 1fffc5b74be4cb638d658ef10029624898f577cc
     <link rel="stylesheet" href="Assets/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    
+
 </head>
+
 <body>
     <nav class="" id="navigator">
         <div class="pfija containerNav lpequeña">
-            <div><a class="nosub" href="#navigator"><i class='bx bxs-invader bx-tada' style='color:#9bdc28' ></i></a></div>
+            <div><a class="nosub" href="#navigator"><i class='bx bxs-invader bx-tada' style='color:#9bdc28'></i></a>
+            </div>
             <div></div>
             <div><a class="nosub lcolorv1" href="#products">PRODUCTOS</a></div>
             <div><a class="nosub lcolorv1" href="#testimonies">TESTIMONIOS</a></div>
@@ -25,12 +33,93 @@
 
     <!-- PRODUCTOS (ROGER Y EDUARDO) -->
 
-    <main class="pestatica grid prodProp" id="products">
+    <main class="pestatica grid prodProp" ">
+            
+        <section   class=" contenedor__principal" id="products">
+
+
+        <div class="contenedor__productos">
             <h2 class="lgrande">NUESTROS PRODUCTOS:</h2>
-            <div class="cintaProd">cinta de productos</div>
-            <div class="btn-cart">
+            <section id="productosContenedor" class="productos"></section>
+
+        </div>
+
+
+
+
+        </section>
+
+
+        <!-- <div class="btn-cart">
                 <button class="btn-cart lcolorv4" onclick="mostrarCarrito ()">Ver Carrito</button>
+            </div> -->
+        <section class="carritoFlotante pfija" id="cartF">
+            <button onclick="ocultarCarritoFlotante ()" class="btn-close"><i
+                class='bx bxs-x-circle bx-flashing centrar' style='color:#9bdc28'></i></button>
+            
+            <ul class="tarjetas-list">
+                <li class="tarjetas-list-item" id="articulosContenedor">
+                    
+                </li>
+            </ul>
+
+            <div class="carritoFlotante__footer">
+                <h4 id="precioTotal">Total </h4>
+                <div id="btnsAcciones">
+                    <button type="button" class="comprar button-33">Comprar <i class='bx bxs-cart'></i> </button>
+                    <button type="button" class="limpiar button-33">Vaciar <i class='bx bxs-cart-download'></i> </button>
+                </div>
             </div>
+            <!-- <div class="carritoFlotante_Contenedor">
+                <h3 class="lpequeña lcolorv2">Carrito Flotante</h3>
+                <div class="articulosContenedor" id="articulosContenedor">
+
+                </div>
+                <h3>Total: <span id="precioTotal"></span> </h3>
+
+                <div id="btnsAcciones">
+                    <button type="button" class="comprar">Comprar</button>
+                    <button type="button" class="limpiar">Vaciar</button>
+                </div>
+                <button onclick="ocultarCarritoFlotante ()" class="btn-close"><i
+                        class='bx bxs-x-circle bx-flashing centrar' style='color:#9bdc28'></i></button>
+            </div> -->
+
+        </section>
+
+        <!-- <section class="pestatica containerH" id="carritoOculto">
+                <div class="grid prodProp prelativa">
+                    <h2>Carrito</h2>
+                    <div>Cinta de carrito</div>
+                    <div class="btn-cart">
+                        <button onclick="ocultarCarrito ()" class="btn-cart lcolorv4">Ocultar Carrito</button>
+                    </div>
+                </div>
+            </section> -->
+
+        <!-- TESTIMONIOS (CAMILO Y ENMANUEL) -->
+
+        <section class="container1" id="testimonies">
+            <h2 class="lgrande">TESTIMONIOS</h2>
+        </section>
+
+        <!-- CONTACTO Y UBICACIÓN (RICARDO) -->
+
+        <section class="container1 lnormal" id="contact">
+            <h2 class="lgrande">CONTÁCTANOS</h2>
+        </section>
+
+        <!-- FORMULARIO (JESUS CLEMENTE) -->
+
+        <section class="container1" id="formulary">
+            <h2 class="lgrande">FORMULARIO</h2>
+        </section>
+
+        <!-- ACERCA DE LA EMPRESA (LUIS) -->
+
+        <section class="container1" id="aboutUs">
+            <h2 class="lgrande">QUIENES SOMOS</h2>
+        </section>
     </main>
 
     <!-- CARRITO (ROGER Y EDUARDO) -->
@@ -41,21 +130,9 @@
         </div>
     </aside>
 
-    <section class="carritoFlotante pfija" id="cartF">
-        <h3 class="lpequeña lcolorv2">Carrito Flotante</h3>
-        <button onclick="ocultarCarritoFlotante ()" class="btn-close"><i class='bx bxs-x-circle bx-flashing centrar' style='color:#9bdc28' ></i></button>
-    </section>
 
-    <section class="pestatica containerH" id="carritoOculto">
-        <div class="grid prodProp prelativa">
-            <h2>Carrito</h2>
-            <div>Cinta de carrito</div>
-            <div class="btn-cart">
-                <button onclick="ocultarCarrito ()" class="btn-cart lcolorv4">Ocultar Carrito</button>
-            </div>
-        </div>
-    </section>
 
+<<<<<<< HEAD
     <!-- TESTIMONIOS (CAMILO Y ENMANUEL) -->
 
     <section class="container1" id="testimonies">
@@ -131,8 +208,11 @@
         <h2 class="lgrande">ACERCA DE NOSOTROS</h2>
     </section>
     
+=======
+>>>>>>> 1fffc5b74be4cb638d658ef10029624898f577cc
     <script src="Assets/js/script1.js"></script>
     <script src="Assets/js/main.js" type="module"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
+
 </html>
