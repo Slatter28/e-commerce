@@ -309,6 +309,7 @@ main {
 
   .contenedor__productos {
     height: 45vw;
+    background-color: var(--color-g4);
   }
 
   .carritoFlotante {
@@ -437,13 +438,6 @@ main {
 }
 
 /* FIN DEL AÑADIDO */
-
-.cintaProd {
-  height: 100%;
-  width: 100%;
-  background-color: var(--color-g3);
-  justify-self: center;
-}
 
 .prodProp {
   grid-template-rows: 0.3fr 2fr 0.3fr;
