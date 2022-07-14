@@ -288,9 +288,9 @@ main {
     transition: all 0.2s ease-in-out;
   }
 
-  /* .containerNav div:hover {
+  .containerNav div:hover {
     background-color: var(--color-g2);
-  } */
+  }
 
   .containerNav div a:hover {
     color: var(--color-v2);
