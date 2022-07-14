@@ -307,6 +307,10 @@ main {
     background-color: var(--color-g3);
   }
 
+  .contenedor__productos {
+    height: 45vw;
+  }
+
   .carritoFlotante {
     /* display: none; */
     height: 530px;
@@ -347,6 +351,8 @@ main {
     justify-self: center;
     border: 3px var(--color-g3) inset;
   }
+
+  /* AÑADIDO POR ROGER */
 
 .tarjetas-list {
   list-style: none;
@@ -429,6 +435,8 @@ main {
 #btnsAcciones button {
   width: 100%;
 }
+
+/* FIN DEL AÑADIDO */
 
 .cintaProd {
   height: 100%;
@@ -518,6 +526,8 @@ main {
   }
   
 /* -------------------------------------------ZONA DE TRABAJO DEL GRUPO--------------------------------- */
+
+
 
 /* POSICIONES */
 
