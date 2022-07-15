@@ -114,6 +114,7 @@ html {
 
 .nosub {
   text-decoration: none;
+  background: transparent;
 }
 
 /* -------------------------------------------------COMPONENTES-------------------------------------------------------------- */
@@ -832,8 +833,8 @@ img {
   }
 
   .testimony{
-    height: 300px;
-    width: 300px;
+    height: 340px;
+    width: 380px;
     border-radius: 25%;
     margin: 1rem;
     padding: 0.5rem;
@@ -842,7 +843,7 @@ img {
     align-items: center;
     align-content: center;
     text-align: justify;
-    background: #424242;
+    background: transparent;
   }
   .testimony span{
     color: aliceblue;
@@ -852,9 +853,9 @@ img {
  /* <==================== QUIENES SOMOS =======================> */
 
 
- /* * {
+ * {
   border: 1px solid white;
-} */
+}
 
 .container1-qs {
   display: flex;
@@ -940,7 +941,7 @@ img {
 
   /* <==================== Formulario =======================> */
 
-    #formulary {
+    /* #formulary {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -1008,4 +1009,79 @@ img {
     background-color: var(--color-g1);
     box-shadow: none;
     color: var(--color-v4);
+  } */
+
+  .form {
+    /* border: 1px solid red; */
+    padding: 0 25px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: 2rem;
+    
+  }
+  
+  .form-control {
+    padding: 15px;
+    font-size: 1rem;
+    background-color: rgb(184, 15, 15);
+    border: 1px solid transparent;
+    border-radius: 8px;
+  }
+  
+  .form-control::placeholder {
+    color: rgb(195, 219, 196);
+  }
+  
+  .form-control:focus-visible {
+    outline: 1px solid lightseagreen;
+    border-color: rgb(8, 250, 8);
+  }
+
+  .form input, .form textarea {
+    background-color: rgba(34, 34, 34, 0.601);
+    color: rgb(8, 250, 8);
+  }
+  
+  .form-group label {
+    display: flex;
+    text-align: left;
+  }
+  
+  input.btn-form  {
+    padding: 15px;
+    background-color: rgba(25, 24, 24, 0.708);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: rgb(0, 255, 4);
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn-form:hover {
+    background-color: rgb(4, 7, 26);
+  }
+  
+  .footer__contenedor__texto {
+    text-align: center;
+    padding: 0 20px;
+    font-size: 18px;
+  }
+  
+  /* mobile first */
+  @media (min-width: 769px) {
+    .hero__nav {
+      height: 100px;
+    }
+
+    .seccion__contenido__acerca-imagen {
+      height: 600px;
+    }
+
+    .btn-abrir {
+      display: none;
+    }
   }
