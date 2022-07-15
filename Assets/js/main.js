@@ -63,3 +63,35 @@ document.addEventListener('DOMContentLoaded', () => {
     pintarArticulos()
   })
 })
+
+// <=================== LOGICA FORMULARIO ======================>
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
+
+  const email = 'tecno.gcinco@gmail.com'
+  // alert ('Enviado')
+  const URL_BASE = `https://formsubmit.co/ajax/${email}`
+
+  const input = e.currentTarget.elements
+  const formData = {
+    name: input.name.value,
+    email: input.email.value,
+    message: input.message.value
+  }
+
+  fetch(URL_BASE, {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify(formData)
+})
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
+
+  console.log(formData)
+  e.currentTarget.reset()
+})
