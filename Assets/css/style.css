@@ -3,6 +3,7 @@ html {
   overflow-x: hidden;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 *,
@@ -860,6 +861,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-top: 2rem;
   padding: 10px;
   max-width: 768px;
   margin-left: auto;
@@ -870,7 +872,8 @@ img {
 .lgrande-qs {
   margin: 0;
   padding: 5px 5px;
-  color: green;
+  color: var(--color-v2);
+  text-shadow: 3px 3px 3px var(--color-g1);
   text-align: center;
   gap: 3px;
 }
@@ -919,10 +922,20 @@ img {
   padding-left: 20px;
 }
 
-.contenedor-parrafo h3, .contenedor-parrafo p {
-  margin: 0;
-  color: white;
+.contenedor-parrafo h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-v2);
   text-align: center;
+  text-shadow: 3px 3px 3px var(--color-g1);
+}
+
+.contenedor-parrafo p {
+  margin: 0px;
+  padding: 0px 20px 0px 20px;
+  color: var(--color-v5);
+  font-weight: 100;
+  text-align: justify;
 }
 
   .stars{
@@ -968,11 +981,12 @@ img {
   .form-group {
     display: flex;
     flex-direction: column;
-    gap: 1em;
   }
 
   .form-group label {
-    color: var(--color-v4);
+    font-size: 1.2em;
+    color: #1C1B1B;
+    padding-top: 1em;
 
   }
 
@@ -1014,6 +1028,7 @@ img {
     box-shadow: none;
     color: var(--color-v4);
   }
+
 
   .contact__container__left h3 {
     font-size: 1.5em;
