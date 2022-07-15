@@ -971,6 +971,11 @@ img {
     gap: 1em;
   }
 
+  .form-group label {
+    color: var(--color-v4);
+
+  }
+
   form input {
     padding: 10px 20px;
     margin-bottom: 1em;
@@ -1008,4 +1013,13 @@ img {
     background-color: var(--color-g1);
     box-shadow: none;
     color: var(--color-v4);
+  }
+
+  .contact__container__left h3 {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+  }
+
+  .contact__container__left p {
+    padding-bottom: 1em;
   }
