@@ -680,9 +680,6 @@ main {
   /* margin-bottom: 10px; */
 }
 
-
-
-
 .container_card .card .contentBx a {
   display: inline-block;
   padding: 10px 20px;
@@ -1017,9 +1014,9 @@ img {
     text-transform: uppercase;
     cursor: pointer;
     background-color: transparent;
-    color: var(--color-g1);
+    color: var(--color-v2);
     font-weight: bolder;
-    box-shadow: 4px 4px 2px var(--color-v4);
+    box-shadow: 4px 4px 2px var(--color-g1);
     border-radius: 10px;
   }
   
